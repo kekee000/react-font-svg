@@ -1,6 +1,6 @@
 {
   "name": "react-font-svg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "fonts to react/react-native svg icon components",
   "main": "index.js",
   "scripts": {
