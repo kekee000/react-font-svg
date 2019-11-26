@@ -4,23 +4,22 @@
 react-font-svg
 ===
 
-You can use this tool to convert fonts to `react`/`react-native` `Icon` Components.
+使用`react-font-svg`转换字体文件到`react`/`react-native`的`Icon`组件.
 
-Support font formats:
+支持转化的字体格式:
 
 - ttf
 - woff/woff2
 - otf
 - eot
 
-# Usage
+# 使用
 
 ```javascript
 npm install -g react-font-svg
 react-font-svg ./src/icons/fontawesome-webfont.ttf -d ./src/icons
 ```
-
-It will generate Jsx component, contains svg paths(default `react-native`):
+生成的`Icon.js`，包含所有图标的svg字形(默认为`react-native`代码)，可以用在`react`/`react-native`项目中：
 
 
 ```javascript
@@ -47,11 +46,11 @@ const Icon = props => (
 export default Icon;
 ```
 
-You can use it in React, ReactNative project now:
+引用使用方式：
 
 ```javascript
 import React from 'react';
-import Icon from './Icon';
+import Icon from './icons/Icon';
 
 export default class App extends React.Component {
     render() {
@@ -66,7 +65,8 @@ export default class App extends React.Component {
 
 ```
 
-# Api
+
+# Api方式使用
 
 ```javascript
 const reactFontSvgConverter = require('react-font-svg');
@@ -82,22 +82,22 @@ const iconTexts = reactFontSvgConverter(
 // {Icon: ''}
 ```
 
-# Notice
+# 注意
 
-- React Native project should import [`react-native-svg`](https://github.com/react-native-community/react-native-svg) modules.
-- Font formats like `otf` or `woff` will cause errors in some cases, you can convert to `ttf` font file before generate.
+- React Native 项目需要安装并引入 [`react-native-svg`](https://github.com/react-native-community/react-native-svg) 模块。
+- `otf`、`woff`字体格式在某些情况下转换会报错，需要先转成`ttf`字体格式再进行转换。
 
-# Options
+# 选项
 
-`react-font-svg -h`
+`rn-font-svg -h`
 
 ```
 Usage
-    $ react-font-svg <file> [<output>]
+    $ rn-font-svg <file> [<output>]
 
   Example
-    $ react-font-svg ./src/font.ttf
-    $ react-font-svg ./src/font.ttf -n 'music,search' -u '0xf00d,0xf00e' -d ./src/icons
+    $ rn-font-svg ./src/font.ttf
+    $ rn-font-svg ./src/font.ttf -n 'music,search' -u '0xf00d,0xf00e' -d ./src/icons
 
 
   Options,
@@ -107,7 +107,7 @@ Usage
     -p, --platform                      component template: react-native|react
 ```
 
-# Relative
+# 相关链接
 
 [FontEditor](https://github.com/ecomfe/fonteditor)
 

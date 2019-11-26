@@ -1,0 +1,45 @@
+{
+  "name": "react-font-svg",
+  "version": "1.0.0",
+  "description": "fonts to react/react-native svg icon components",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/spec/*.spec.js",
+    "lint": "eslint ./*.js"
+  },
+  "bin": {
+    "react-font-svg": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kekee000/react-font-svg.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "font to svg",
+    "icon",
+    "font",
+    "svg"
+  ],
+  "files": [
+    "cli.js",
+    "index.js",
+    "tpl"
+  ],
+  "author": "kekee000@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kekee000/react-font-svg/issues"
+  },
+  "homepage": "https://github.com/kekee000/react-font-svg#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "fonteditor-core": "^2.0.7",
+    "meow": "^5.0.0",
+    "pako": "^1.0.10"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  }
+}
